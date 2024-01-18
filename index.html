@@ -16,6 +16,10 @@
     <form action="/" method="GET">
       <label for="username">Your Name</label>
       <input type="text" name="user-name" id="username" />
+
+      <label for="usermessage">Your Message</label>
+      <textarea name="user-message" id="usermessage" cols="30" rows="10"></textarea>
+
       <label for="useremail">Your Email address</label>
       <input type="email" name="user-email" id="useremail" />
       <label for="userage">Your age</label>
@@ -25,18 +29,44 @@
       <label for="userdate">Your birthdate</label>
       <input type="date" name="userdate" id="user-date" />
       <hr />
+      <label for="favourite-colour">Your favourite colour?</label>
+      <select name="" id="favouritecolour">
+        <option value="">Green</option>
+        <option value="">Blue</option>
+        <option value="">Paisley</option>
+      </select>
       <h2>How should we verify your account</h2>
-      <input
-        type="radio"
-        name="verify"
-        id="verify-text-message"
-        value="text-message"
-      />
-      <label for="verify-text-message">Via Text/SMS</label>
-      <input type="radio" name="verify" id="verify-phone" value="phone" />
-      <label for="verify-phone">Via Phone Call</label>
-      <input type="radio" name="verify" id="verify-email" value="email" />
-      <label for="verify-email">Via EMAIL</label>
+      <div class="form-control-inline">
+        <input
+          type="radio"
+          name="verify"
+          id="verify-text-message"
+          value="text-message"
+        />
+        <label for="verify-text-message">Via Text/SMS</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-phone" value="phone" />
+        <label for="verify-phone">Via Phone Call</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="radio" name="verify" id="verify-email" value="email" />
+        <label for="verify-email">Via EMAIL</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="agree-terms" name="terms">
+        <label for="agree-terms">Agree to terms?</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="contact-email" name="contact" value="email">
+        <label for="contact-email">Contact me via email</label>
+      </div>
+      <div class="form-control-inline">
+        <input type="checkbox" id="contact-phone" name="contact" value="phone">
+        <label for="contact-phone">Contact me via telephone device</label>
+      </div>
+      
+
       <button>Beesechurger</button>
     </form>
   </body>
